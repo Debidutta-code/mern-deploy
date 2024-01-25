@@ -7,6 +7,7 @@ function App() {
   const handleClick = async () => {
     const response = await fetch("http://localhost:4000/home", {
       method: "GET"
+      
     })
     const data = await response.json();
     if(data.success){
