@@ -33,7 +33,7 @@ async function main() {
 // requests
 
 app.get('/', (req, res) => {
-    res.json({message : "Hello world"});
+    res.json({message : "Hello world Dev"});
 })
 
 
