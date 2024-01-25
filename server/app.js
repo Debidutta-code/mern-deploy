@@ -12,7 +12,7 @@ const port = process.env.PORT || 8080;
 
 // to make it more secure to not access from any port except than 3000
 const corsOption = {
-    origin : "https://mern-deploy-backend-jhxc.onrender.com"
+    origin : "https://mern-deploy-frontend-gatl.onrender.com"
 }
 
 app.use(express.json());

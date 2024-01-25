@@ -7,7 +7,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://mern-deploy-backend-jhxc.onrender.com").then(res => res.json()).then(data => setMessage(data.message));
+    fetch("https://mern-deploy-frontend-gatl.onrender.com").then(res => res.json()).then(data => setMessage(data.message));
   }, []);
   return (
     <div className="App">
