@@ -11,12 +11,12 @@ const port = process.env.PORT || 8080;
 // middleware
 
 // to make it more secure to not access from any port except than 3000
-const corsOption = {
-    origin : "https://mern-deploy-frontend-gatl.onrender.com"
-}
+// const corsOption = {
+//     origin : "http://localhost:3000"
+// }
 
 app.use(express.json());
-app.use(cors(corsOption));
+app.use(cors());
 
 // connect mongodb
 
@@ -28,15 +28,11 @@ async function main() {
 }
 
 
-
-
 // requests
 
-app.get('/', (req, res) => {
-    res.json({message : "Hello world Dev"});
+app.get('/home', (req, res) => {
+    res.json({success : true, message : "Hello world Dev"});
 })
-
-
 
 
 
