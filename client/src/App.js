@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("hello");
   
   const handleClick = async () => {
-    const response = await fetch("https://mern-demo-ojek.onrender.com/", {
+    const response = await fetch("https://mern-demo-ojek.onrender.com/home", {
       method: "GET"
     })
     const data = await response.json();
