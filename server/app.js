@@ -30,7 +30,7 @@ async function main() {
 
 // requests
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.json({success : true, message : "Hello world Dev"});
 })
 
