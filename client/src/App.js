@@ -3,9 +3,11 @@ import { useState } from 'react';
 
 function App() {
   const [message, setMessage] = useState("hello");
+
+  const fetchPath = "https://mern-deploy-frontend-gatl.onrender.com/" || "http://localhost:3000/"
   
   const handleClick = async () => {
-    const response = await fetch("https://mern-deploy-frontend-gatl.onrender.com", {
+    const response = await fetch("http://localhost:4000/", {
       method: "GET"
     })
     const data = await response.json();
