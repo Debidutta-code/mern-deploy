@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <h1>{message}</h1>
-      <button onClick={handleClick}>BUTTON</button>
+      <button className='btn' onClick={handleClick}>BUTTON</button>
     </div>
   );
 }
