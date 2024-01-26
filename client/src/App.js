@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("hello");
   
   const handleClick = async () => {
     const response = await fetch("https://mern-deploy-frontend-gatl.onrender.com", {
