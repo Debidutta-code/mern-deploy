@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState("");
   
   const handleClick = async () => {
-    const response = await fetch("http://localhost:4000/home", {
+    const response = await fetch("https://mern-deploy-frontend-gatl.onrender.com", {
       method: "GET"
     })
     const data = await response.json();
